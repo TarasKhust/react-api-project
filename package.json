@@ -1,0 +1,60 @@
+{
+  "name": "my-react-star-db",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Taras Rushchak <taraskhust@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development parcel src/index.html --open",
+    "build": "NODE_ENV=production parcel build src/index.html --public-url ./",
+    "test:eslint": "eslint src/ --ext .js --ext .jsx",
+    "pretest": "yarn run test:eslint",
+    "precommit": "lint-staged",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist",
+    "build1": "NODE_ENV=production parcel build src/index.html --public-url https://marsbased.github.io/my-awesome-app/"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,scss,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.5.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0",
+    "gh-pages": "^2.0.1",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
+    "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.17.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.8.4",
+    "react-jsx": "^1.0.0"
+  }
+}
