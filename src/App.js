@@ -1,22 +1,35 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from "react";
 
-export default class App extends Component {
+export default () => {
+  const [title] = useState("my title");
+  const [inputVal, updateInput] = useState("");
+  const [list, updateList] = useState([]);
+  const addItem = () => {
+    return list.map((item, i) => <div key={i}>{item}</div>);
+  };
 
-  state = {
-  name: 'taras',
-  age: 12
-  }
+  useEffect(() => {
+    console.log('effect ran')
+  }, [list, inputVal]);
 
-  render() {
-    const h1 = 'welcome';
-    const h2 = 'My anme is Welcome on taras'
-    h2
-    return (
-      <div>
-        <h1>{h1}</h1>
-        <h2>{h2}</h2>
-      </div>
-    )
+  return (
+    <div>
+      <h3>{title}</h3>
+      <input type="text" value={inputVal}
+             onChange={event => updateInput(event.target.value)}/>
+      <button onClick={() => {
+        updateList([...list, inputVal]);
+        updateInput("");
+      }}>Click My
+      </button>
+      <button>+</button>
+      <button>-</button>
+      <input type="text" value={inputVal}
+             onChange={(evt) => updateInput(evt.target.value)}
+      />
+      <h1>{addItem()}</h1>
+    </div>
+  );
 
-  }
-}
+};
+
