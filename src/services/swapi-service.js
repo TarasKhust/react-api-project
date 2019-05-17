@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 export default class SwapiService {
 
   _apiBase = 'https://swapi.co/api';
@@ -50,12 +49,12 @@ export default class SwapiService {
   }
 
   _transformPlanet(planet) {
-    const { name, population, rotation_period, diameter } = planet;
+    const { name, population, rotation_period: rotationPeriod, diameter } = planet;
     return {
       id: this._extractId(planet),
       name: name,
       population: population,
-      rotationPeriod: rotation_period,
+      rotationPeriod: rotationPeriod,
       diameter: diameter
     }
   }
@@ -75,12 +74,13 @@ export default class SwapiService {
   }
 
   _transformPerson(person) {
+    const { name, gender, birthYear, eyeColor } = person;
     return {
       id: this._extractId(person),
-      name: person.name,
-      gender: person.gender,
-      birthYear: person.birthYear,
-      eyeColor: person.eyeColor
+      name: name,
+      gender: gender,
+      birthYear: birthYear,
+      eyeColor: eyeColor
     }
   }
 }
