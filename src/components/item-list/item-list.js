@@ -46,7 +46,6 @@ export default class ItemList extends Component {
         className="item-list list-group"
         onClick={evt => {
           const target = evt.target;
-          console.log(target);
 	        if (target.classList.contains('1')) {
 		        target.classList.remove('1');
 		        target.classList.add('active');
