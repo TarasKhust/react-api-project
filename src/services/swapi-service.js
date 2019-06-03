@@ -1,29 +1,34 @@
-import "@babel/polyfill";
 export default class SwapiService {
-  _apiBase = "https://swapi.co/api";
 
-  getResource = async url => {
+  _apiBase = 'https://swapi.co/api';
+
+  getResource = async (url) => {
     const res = await fetch(`${this._apiBase}${url}`);
 
     if (!res.ok) {
-      throw new Error(`Could not fetch ${url}` + `, received ${res.status}`);
+      throw new Error(`Could not fetch ${url}` +
+        `, received ${res.status}`)
     }
     return await res.json();
   };
 
   getAllPeople = async () => {
     const res = await this.getResource(`/people/`);
-    return res.results.map(this._transformPlanet);
+    return res.results
+      .map(this._transformPerson)
+      .slice(0, 5);
   };
 
-  getPerson = async id => {
+  getPerson = async (id) => {
     const person = await this.getResource(`/people/${id}/`);
     return this._transformPerson(person);
   };
 
   getAllPlanets = async () => {
     const res = await this.getResource(`/planets/`);
-    return res.results.map(this._transformPlanet);
+    return res.results
+      .map(this._transformPlanet)
+      .slice(0, 5);
   };
 
   getPlanet = async (id) => {
@@ -33,67 +38,52 @@ export default class SwapiService {
 
   getAllStarships = async () => {
     const res = await this.getResource(`/starships/`);
-    return res.results.map(this._transformStarship);
+    return res.results
+      .map(this._transformStarship)
+      .slice(0, 5);
   };
 
-  getStarship = async id => {
-    const starship = await this.getResource(`/starships/${id}/`);
+  getStarship = async (id) => {
+    const starship = this.getResource(`/starships/${id}/`);
     return this._transformStarship(starship);
   };
 
-  _extractId = item => {
+  _extractId = (item) => {
     const idRegExp = /\/([0-9]*)\/$/;
-    const id = item.url.match(idRegExp)[1];
-    return id;
+    return item.url.match(idRegExp)[1];
   };
 
-  _transformPlanet = planet => {
-    const {
-      name,
-      population,
-      rotation_period: rotationPeriod,
-      diameter
-    } = planet;
+  _transformPlanet = (planet) => {
     return {
       id: this._extractId(planet),
-      name: name,
-      population: population,
-      rotationPeriod: rotationPeriod,
-      diameter: diameter
+      name: planet.name,
+      population: planet.population,
+      rotationPeriod: planet.rotation_period,
+      diameter: planet.diameter
     };
   };
 
-  _transformStarship = starship => {
-    const {
-      model,
-      manufacturer,
-      costInCredits,
-      length,
-      crew,
-      passengers,
-      cargoCapacity
-    } = starship;
+  _transformStarship = (starship) => {
     return {
       id: this._extractId(starship),
-      model: model,
-      manufacturer: manufacturer,
-      costInCredits: costInCredits,
-      length: length,
-      crew: crew,
-      passengers: passengers,
-      cargoCapacity: cargoCapacity
-    };
+      name: starship.name,
+      model: starship.model,
+      manufacturer: starship.manufacturer,
+      costInCredits: starship.cost_in_credits,
+      length: starship.length,
+      crew: starship.crew,
+      passengers: starship.passengers,
+      cargoCapacity: starship.cargo_capacity
+    }
   };
 
-  _transformPerson = person => {
-    const { name, gender, birth_year, eye_color } = person;
-    console.log(person)
+  _transformPerson = (person) => {
     return {
       id: this._extractId(person),
-      name: name,
-      gender: gender === 'n/a' ? 'Robot' : gender,
-      birthYear: birth_year,
-      eyeColor: eye_color
-    };
-  };
+      name: person.name,
+      gender: person.gender,
+      birthYear: person.birth_year,
+      eyeColor: person.eye_color
+    }
+  }
 }

@@ -1,3 +1,3 @@
-import Peoplepage from './people-page';
+import PeoplePage from './people-page';
 
-export default Peoplepage;
+export default PeoplePage;

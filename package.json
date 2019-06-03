@@ -3,30 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "fetch": "^1.1.0",
-    "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "parcel src/index.html --open",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
-    "homepage": "https://taraskhust.github.io/react-api-project/build/"
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-decorators": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "@babel/preset-react": "^7.0.0",
-    "parcel-bundler": "^1.12.3",
-    "prettier": "^1.17.1",
-    "babel-helper-define-map": "^6.26.0"
+    "@babel/preset-env": "^7.4.5"
   }
 }
