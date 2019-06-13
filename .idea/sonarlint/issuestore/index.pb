@@ -10,8 +10,6 @@
 	yarn.lock,5/3/53585a096fe3a3b96321113856ae62602995a33b
 E
 src/bootstrap.min.css,a/5/a5eaa74fb6e666f1835b28b9ed9c5b6086665618
-8
-.babelrc,b/c/bcac7464521b8c19a2372c739f6dc9e9ab7dfc80
 U
 %src/components/item-list/item-list.js,5/f/5f78dd0e092460a9b79302e276cc29709ccac249
 V
@@ -28,12 +26,6 @@ _
 /src/components/planet-details/planet-details.js,7/1/712268ef272e61ec5b46e44813231d15af7e5608
 `
 0src/components/planet-details/planet-details.css,8/c/8cbe780decbd9b3fb25b291f544d05a27db04b80
-V
-&src/components/person-details/index.js,b/4/b4c78a08e41ea72c5af50dc9f8c6976156def1f5
-_
-/src/components/person-details/person-details.js,e/8/e80f80d824178439d412d1bdd937c4c6efc67f39
-`
-0src/components/person-details/person-details.css,f/0/f09644d908b8810c9b04b1a1ed00cd06ba543be2
 Q
 !src/components/item-list/index.js,9/6/96505b84b1caa50bab30da693cada2afb93344cd
 X
@@ -66,10 +58,6 @@ $src/components/error-button/index.js,1/d/1dbdb23c536d40ac4f1ed1f98e9bf89c2cb0e
 src/index.js,f/9/f900edc44cb929c2267a16100a32851f6d5b477d
 >
 src/index.html,5/c/5c975582791da6f060261188096d6aad85db6e09
-D
-dist/src.e31bb0bc.js,4/3/43cf7b766d886adb6049917ddd9104f27373eaf6
-@
-build/index.html,9/9/990a85f5e72fc21bd93d9e8ddb10d110045a91c8
 S
 #src/components/people-page/index.js,9/e/9e45ed48f157c7dc3004419bcc9b8e9e4b788242
 Z
@@ -78,3 +66,7 @@ Q
 !src/components/spinner/spinner.js,4/3/43f3fdd16977a14ecef229061d424f355dbfe319
 Y
 )src/components/people-page/people-page.js,f/8/f833e80bb175f4713ee2f55e07302e6fde72bb56
+A
+public/index.html,f/4/f43ecdf8d666ee908aacce037b4cd72159e4741b
+]
+-src/components/error-boundry/error-boundry.js,8/1/81cff24ded76c7c05797046dc3fad4d0a009e4ac
