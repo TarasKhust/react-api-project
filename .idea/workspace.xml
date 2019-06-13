@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51bbaf72-20b4-416e-ae70-1da764061031" name="Default" comment="add component catch ERROR">
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/compose.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-child-function.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/hoc-helpers/with-swapi-service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/login-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/people-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/planets-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/secret-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/starships-page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sw-components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sw-components/item-lists.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sw-components/person-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sw-components/planet-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sw-components/starship-details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/swapi-service-context/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/swapi-service-context/swapi-service-context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/dummy-swapi-service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43cf7b766d886adb6049917ddd9104f27373eaf6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f78dd0e092460a9b79302e276cc29709ccac249" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f78dd0e092460a9b79302e276cc29709ccac249" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/990a85f5e72fc21bd93d9e8ddb10d110045a91c8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b4c78a08e41ea72c5af50dc9f8c6976156def1f5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bcac7464521b8c19a2372c739f6dc9e9ab7dfc80" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e80f80d824178439d412d1bdd937c4c6efc67f39" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f09644d908b8810c9b04b1a1ed00cd06ba543be2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/people-page/people-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/people-page/people-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/person-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/person-details/person-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-details/item-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/random-planet/random-planet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/row/row.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/row/row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/swapi-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/swapi-service.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="456">
+              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -149,7 +110,6 @@
         <option value="$PROJECT_DIR$/src/components/spinner/spinner.js" />
         <option value="$PROJECT_DIR$/src/components/planet-details/planet-view.js" />
         <option value="$PROJECT_DIR$/build/index.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/header/header.js" />
         <option value="$PROJECT_DIR$/src/api.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
@@ -167,6 +127,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6" />
         <option value="$PROJECT_DIR$/src/components/people-page/people-page.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -179,9 +140,8 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP (7.1.8)" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="width" value="1114" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -459,7 +419,7 @@
       <workItem from="1559726622785" duration="7624000" />
       <workItem from="1560147572336" duration="2137000" />
       <workItem from="1560400687592" duration="159000" />
-      <workItem from="1560405901119" duration="838000" />
+      <workItem from="1560405901119" duration="1280000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1557395273245</created>
@@ -549,7 +509,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201118000" />
+    <option name="totallyTimeSpent" value="201560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,7 +522,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47325101" visible="true" weight="0.21565495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -571,7 +530,7 @@
       <window_info id="npm" order="4" sideWeight="0.52674896" side_tool="true" weight="0.2765531" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3261317" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49864987" visible="true" weight="0.20898642" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49864987" weight="0.20898642" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39820358" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -586,7 +545,7 @@
       <window_info anchor="bottom" id="Quokka" order="14" sideWeight="0.49755502" weight="0.24351297" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50293773" side_tool="true" weight="0.31893003" />
       <window_info anchor="bottom" id="SonarLint" order="16" weight="0.32934132" />
-      <window_info anchor="bottom" id="Terminal" order="17" weight="0.30761316" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="17" visible="true" weight="0.30721003" />
       <window_info anchor="bottom" id="MAGist" order="18" />
       <window_info anchor="bottom" id="TypeScript" order="19" />
       <window_info anchor="bottom" id="GraphQL" order="20" />
@@ -696,13 +655,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="add component catch ERROR" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="306" column="8" selection-start-line="306" selection-start-column="8" selection-end-line="306" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.quokka">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -732,7 +684,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/error-indicator/error-indicator.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/build/static/js/main.2aff0aeb.js" />
     <entry file="file://$PROJECT_DIR$/src/App.js" />
     <entry file="file://$PROJECT_DIR$/src/components/random-planet/index.js">
@@ -758,13 +709,6 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/pro-react-redux-master/star-db/40-component-did-mount-practice/src/components/app/app.js" />
     <entry file="file://$PROJECT_DIR$/index.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.eslintrc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -897,10 +841,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="456">
+          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
         </state>
       </provider>
     </entry>
